@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5; */
+
+font:15px/1.5 Arial,Helvetica,sans-serif;
+
+/* background-color: var(--blues) !important; */
+
+padding:0;
+margin:0;
+background-color:#f4f4f4;
+}
+
+
+.container
+{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+header
+{
+    background-color: #35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom:3px solid #e8491d;
+}
+header a
+{
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+
+header ul
+{
+    margin:0;
+    padding:0;
+}
+header li
+{
+    float:left;
+    display: inline;
+    padding:0 20px 0 20px;
+
+}
+
+header #logo
+{
+    float:left;
+}
+
+
+header #logo h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+header nav
+{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current
+{
+color:#e8491d;
+}
+
+header a:hover{
+color:#cccccc;
+font-weight: bold;;
+}
+
+/* content */
+
+#content
+{
+min-height: 200px;
+text-align: center;
+/* background: url() no-repeat 0 -400px; 0 x axis -400px is vertical y axis */
+}
+
+#showcase h1{
+
+
+    margin-top: 100px;;
+font-size: 55px;
+margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter
+{
+    padding:10px;
+    color:#ffffff;
+    background-color: #35424a;
+}
+
+#newsletter h1
+{
+float:left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"]
+{
+padding:4px;
+height:25px;
+width:250px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.button_1
+{
+    height:38px;
+background-color: #e8491d;
+border:none ;
+/* border:0; also we can give */
+
+padding-left: 20px;
+padding-right: 20px;
+color:#ffffff;
+}
+
+#boxes
+{
+    margin-top: 20px;
+}
+
+#boxes .box
+{
+    float:left;
+    width:30%;
+    text-align: center;
+    padding:10px;
+}
+
+#boxes .box img
+{
+    width:90px;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+aside#sidebar
+{
+    float:right;
+    width:30%;
+    margin-top: 10px;
+}
+
+article#main-col
+{
+    float:left;
+    width:65%;
+}
+
+
+.dark
+{
+    padding:15px;
+background-color: #35424a;
+color:#ffffff;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+</style>
+
+<body>
+    
+    
+<header>
+
+    <div class="container">
+    
+        <div id="logo">
+    <h1> <span class="highlight">vignesh </span> web design </h1>
+    </div>
+    
+    
+    
+    
+    <nav>
+    
+    <ul>
+    
+    <li> <a href="index.html"> Home </a></li>
+    <li> <a href="index.html" class="current"> About </a></li>
+    <li> <a href="index.html"> Services </a></li>
+    
+    </ul>
+    </nav>
+    
+    </div>
+    
+    </header>
+    
+    
+    <section id="newsletter">
+    
+    <div class="container">
+    
+    <h1> subscribe to our newsletter </h1>
+    
+    <form action="">
+    
+    <input type="email" placeholder="enter email">
+    <button type="submit" class="button_1"> Subscribe</button>
+    
+    </form>
+    
+    </div>
+    
+    </section>
+    
+    
+    <section id="main">
+    
+    <div class="container">
+    
+        <article id="main-col">
+
+<h1 class="page-title"> About us</h1>
+
+<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem animi impedit nobis placeat culpa optio, et hic amet dignissimos natus sequi incidunt nemo repudiandae odio.</p>
+
+<p class="dark"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam, minus obcaecati nihil minima laboriosam aspernatur exercitationem corrupti molestias qui laudantium? Libero amet sapiente nobis!</p>
+
+
+        </article>
+    
+<aside id="sidebar">
+
+<div class="dark">
+    <h3> what we do </h3>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem suscipit architecto minus doloremque odio, eveniet, quod iure aliquid rerum at nisi facere explicabo numquam culpa?</p>
+
+</div>
+
+</aside>
+
+
+    </div>
+    
+    </section>
+    
+    
+    <footer>
+    
+    <p> vignesh web design , copyright &copy: 2024</p>
+    
+    </footer>
+    
+
+
+</body>
+</html>
