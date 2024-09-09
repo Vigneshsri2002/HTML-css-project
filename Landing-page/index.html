@@ -1,3 +1,14 @@
+
+<!-- Learn from these project font koduthu fontsize, lineheight and font family tharalam
+
+2) how to set a navbar
+
+* header logo => float left and  h1 => margin,padding 0
+
+* ul => margin 0 padding 0 and header nav float right 
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +20,10 @@
 <style>
 
 
-
+:root
+{
+    --blues:blue;
+}
 
 body{
     /* font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +31,8 @@ body{
     line-height: 1.5; */
 
 font:15px/1.5 Arial,Helvetica,sans-serif;
+
+/* background-color: var(--blues) !important; */
 
 padding:0;
 margin:0;
@@ -76,6 +92,132 @@ header nav
     float:right;
     margin-top: 10px;
 }
+
+header .highlight, header .current
+{
+color:#e8491d;
+}
+
+header a:hover{
+color:#cccccc;
+font-weight: bold;;
+}
+
+/* content */
+
+#content
+{
+min-height: 200px;
+text-align: center;
+/* background: url() no-repeat 0 -400px; 0 x axis -400px is vertical y axis */
+}
+
+#showcase h1{
+
+
+    margin-top: 100px;;
+font-size: 55px;
+margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#newsletter
+{
+    padding:10px;
+    color:#ffffff;
+    background-color: #35424a;
+}
+
+#newsletter h1
+{
+float:left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"]
+{
+padding:4px;
+height:25px;
+width:250px;
+}
+
+input:focus{
+    outline: 0;
+}
+
+.button_1
+{
+    height:38px;
+background-color: #e8491d;
+border:none ;
+/* border:0; also we can give */
+
+padding-left: 20px;
+padding-right: 20px;
+color:#ffffff;
+}
+
+#boxes
+{
+    margin-top: 20px;
+}
+
+#boxes .box
+{
+    float:left;
+    width:30%;
+    text-align: center;
+    padding:10px;
+}
+
+#boxes .box img
+{
+    width:90px;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+@media all and (max-width:768px)
+{
+    header #logo,header nav,header nav li,#newsletter h1,#newsletter form,#boxes .box,article#main-col,aside#sidebar{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+
+#newsletter button, .quote .button{
+
+    display:block;
+    width:100%;
+}
+
+
+#newsletter form input[type="email"].qutoe input,.quote textarea
+{
+    width:100%;
+    margin-bottom: 5px;
+}
+
+
+}
+
+
+
+
 </style>
 
 
@@ -88,7 +230,7 @@ header nav
 <div class="container">
 
     <div id="logo">
-<h1> vignesh web design </h1>
+<h1> <span class="highlight">vignesh </span> web design </h1>
 </div>
 
 
@@ -98,7 +240,7 @@ header nav
 
 <ul>
 
-<li> <a href="index.html"> Home </a></li>
+<li> <a href="index.html" class="current"> Home </a></li>
 <li> <a href="index.html"> About </a></li>
 <li> <a href="index.html"> Services </a></li>
 
@@ -117,6 +259,7 @@ header nav
 
 <h1> Affordable professional webdesigns </h1>
 
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi laborum beatae iste, quos provident quibusdam ullam rerum perspiciatis. Nihil ut enim eaque ratione ex!</p>
 </div>
 
 </section>
@@ -160,6 +303,16 @@ header nav
     
     </div>
     
+
+    <div class="box">
+
+        <h3> Graphic design 
+             </h3>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi saepe sint facere, beatae sapiente cum nobis blanditiis veniam modi labore dolorum laborum error, et ab.</p>
+        
+        </div>
+
+
 </div>
 
 </section>
